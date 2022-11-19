@@ -61,7 +61,8 @@ CREATE TABLE adherent (
 
 );
 
-
+ 
+ 
 
 CREATE TYPE DROIT_TYPE AS ENUM('ALL','READ','WRITE');
 -- ================================= employe ================================3
