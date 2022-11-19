@@ -24,7 +24,7 @@ DROP SEQUENCE IF EXISTS terminal_seq;
 
 DROP TYPE IF EXISTS CARTE_TYPE;
 DROP TYPE IF EXISTS DROIT_TYPE;
-
+insert into utilisateur value (nextval(user_seq),)
 -- ================================= utilisateur ================================1
 CREATE SEQUENCE user_seq START 1000001;
 CREATE TABLE utilisateur (
