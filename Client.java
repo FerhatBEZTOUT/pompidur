@@ -5,12 +5,12 @@ import java.io.*;
 
 public class Client {
 	public static void main(String[] args) throws IOException {
-		Socket s = new Socket("localhost",2004);
+		Socket s = new Socket("localhost",2004);  // Création d'un socket 
 		
-		PrintWriter pr = new PrintWriter (s.getOutputStream());
+		PrintWriter pr = new PrintWriter (s.getOutputStream());  // Objet printWriter qui permet d'envoyer des msgs via des sockets
 		Scanner sc= new Scanner(System.in); // Un objet Scanner pour lire les entrées de l'utilisateur
 		
-		InputStreamReader in = new InputStreamReader(s.getInputStream());
+		InputStreamReader in = new InputStreamReader(s.getInputStream());   // Objet InputStreamReader qui permet de lire des msgs envoyé via des sockets
 		BufferedReader bf = new BufferedReader(in);
 		
 		String str;

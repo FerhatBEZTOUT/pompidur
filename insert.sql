@@ -23,16 +23,16 @@ ALTER SEQUENCE materiel_seq RESTART WITH 10001 ;
 -- ================================= utilisateur ================================1
 
 INSERT INTO utilisateur VALUES 
-(nextval('user_seq'),'admin', 'admin', '2000-01-01', 'admin@gmail.com', '$2y$10$zhrBgkUwDoldj.GGx.Pbiuffmt0wiiuIpooiwBcwLh0bVL4OcLTg2', NULL, NULL, NULL, NULL, NULL);
+(nextval('user_seq'),'admin', 'admin', '2000-01-01', 'admin@gmail.com', '$2y$10$zhrBgkUwDoldj.GGx.Pbiuffmt0wiiuIpooiwBcwLh0bVL4OcLTg2', NULL, NULL, NULL, NULL, NULL, TRUE);
 
 INSERT INTO utilisateur VALUES 
-(nextval('user_seq'),'doe', 'john', '1977-04-20', 'jd@gmail.com', '$2y$10$r2dF.LJpyU5dP4k74JZUce56PZ8XpO2A8fKdwEHIKv0RNSoXPcWJq', NULL, NULL, NULL, NULL, 'Paris');
+(nextval('user_seq'),'doe', 'john', '1977-04-20', 'jd@gmail.com', '$2y$10$r2dF.LJpyU5dP4k74JZUce56PZ8XpO2A8fKdwEHIKv0RNSoXPcWJq', NULL, NULL, NULL, NULL, 'Paris',FALSE);
 
 INSERT INTO utilisateur VALUES 
-(nextval('user_seq'),'doe', 'jenna','1982-01-03', 'jenna@gmail.com', '$2y$10$BRd8q22P6d9pvh8Ej2u7xuGXnusDV8knHscuMiIT9qWCXX2cdbNhG', NULL, NULL, NULL, NULL, 'Lyon');
+(nextval('user_seq'),'doe', 'jenna','1982-01-03', 'jenna@gmail.com', '$2y$10$BRd8q22P6d9pvh8Ej2u7xuGXnusDV8knHscuMiIT9qWCXX2cdbNhG', NULL, NULL, NULL, NULL, 'Lyon',FALSE);
 
 INSERT INTO utilisateur VALUES 
-(nextval('user_seq'),'beztout', 'ferhat','1997-02-03', 'deter@gmail.com', '$2y$10$Ho1V7/e35YsQVnnBwqEAB.g0V3bv7x5tpSWbaRNehwjxeCMU.cFDi', NULL, '0645976598','15 rue Bercy', '75012', 'Paris');
+(nextval('user_seq'),'beztout', 'ferhat','1997-02-03', 'deter@gmail.com', '$2y$10$Ho1V7/e35YsQVnnBwqEAB.g0V3bv7x5tpSWbaRNehwjxeCMU.cFDi', NULL, '0645976598','15 rue Bercy', '75012', 'Paris',FALSE);
 
 
 -- ================================= adherent ================================1
@@ -55,13 +55,13 @@ INSERT INTO employe VALUES
 
 -- ================================= carte ================================1
 INSERT INTO carte VALUES 
-(nextval('carte_seq'), 'ADMIN', '2029-12-31', true, 1000002);
+(nextval('carte_seq'),  '2029-12-31', true, 1000002);
 
 INSERT INTO carte VALUES 
-(nextval('carte_seq'), 'ADHER', '2025-05-20', true, 1000004);
+(nextval('carte_seq'), '2025-05-20', true, 1000004);
 
 INSERT INTO carte VALUES 
-(nextval('carte_seq'), 'ADHER', '2024-01-15', true, 1000003);
+(nextval('carte_seq'), '2024-01-15', true, 1000003);
 
 
 -- ================================= salle ================================1

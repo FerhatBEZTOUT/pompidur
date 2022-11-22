@@ -26,7 +26,6 @@ DROP SEQUENCE IF EXISTS terminal_seq;
 DROP SEQUENCE IF EXISTS materiel_seq;
 
 
-DROP TYPE IF EXISTS CARTE_TYPE;
 DROP TYPE IF EXISTS DROIT_TYPE;
 
 -- ================================= utilisateur ================================1
@@ -43,7 +42,8 @@ CREATE TABLE utilisateur (
     rue_user VARCHAR(100),
     code_post_user CHAR(5),
     ville_user VARCHAR(50),
-
+    hasFullAccess BOOLEAN NOT NULL DEFAULT FALSE,
+    
     CONSTRAINT pk_utilisateur PRIMARY KEY (id_user),
     CONSTRAINT ck_id CHECK (id_user>1000000 AND id_user<10000000),
     CONSTRAINT ck_nom CHECK (length(nom_user)>0),
@@ -82,11 +82,9 @@ CREATE TABLE employe (
 
 
 CREATE SEQUENCE carte_seq START 1000001;
-CREATE TYPE CARTE_TYPE AS ENUM('ADMIN','ADHER');
 -- ================================= carte ================================4
 CREATE TABLE carte (
     id_carte INT,
-    type_carte CARTE_TYPE NOT NULL,
     date_exp DATE NOT NULL,
     carte_active BOOLEAN NOT NULL,
     id_user INT NOT NULL,
