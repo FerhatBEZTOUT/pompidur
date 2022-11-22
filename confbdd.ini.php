@@ -1,6 +1,6 @@
 <?php
-$host = 'mysql-colearnio.alwaysdata.net';
-$dbname = 'colearnio_bdd';
-$user = 'colearnio';
-$password = 'ma3dnous';
+$host = 'postgresql-pampidur.alwaysdata.net';
+$dbname = 'pampidur_bdd';
+$user = 'pampidur';
+$password = 'Ma3dnous!!';
 ?>

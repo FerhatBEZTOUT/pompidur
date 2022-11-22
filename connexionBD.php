@@ -1,4 +1,5 @@
 <?php
+    include_once __DIR__."/confbdd.ini.php";
     try {
         // objet PDO qui permet de faire des requete vers la BD
         $conn = new PDO('pgsql:host='. $host.';dbname='.$dbname.'',$user,$password);
