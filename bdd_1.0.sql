@@ -1,6 +1,7 @@
 -- Création base de données Pampidur
 
 
+
 DROP TABLE IF EXISTS ecrire;
 DROP TABLE IF EXISTS empreinter;
 DROP TABLE IF EXISTS exemplaire;
