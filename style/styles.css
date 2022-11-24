@@ -1,0 +1,482 @@
+/** Body **/
+body {
+	width: 100%;
+	margin: 0px;
+	font-family: system-ui;
+}
+/** Aside **/
+
+aside{
+	position: absolute;
+	display: block;
+}
+
+aside ul {
+	list-style-type: none;
+	height: auto;
+	position: fixed;
+	top: 50%;
+	padding: 0;
+	margin-left: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+aside ul li {
+	text-align: center;
+}
+
+aside ul li a{
+
+}
+
+aside ul li a img{
+	height: 50px;
+	width: 50px;
+
+}
+
+/** Headings **/
+
+h1 {
+	margin: 0px;
+	font-weight: normal;
+	font-size: 30px;
+	padding: 12px 0px 10px 0px;
+	font-family: Basica industrial;
+	letter-spacing: 10px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #f3ca20;
+}
+
+h2{
+	text-align: center;
+	font-size: 60px;
+	font-weight: lighter;
+	color: black;
+}
+
+/** Header **/
+
+header {
+	background-color: #a87432;
+	
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+  float: left;
+  width: 170px;
+  height: 90px;
+  margin-left: 2cm;
+  margin-right: 1cm;
+}
+
+header nav {
+	position: fixed;
+	right: 10%;
+	top: auto;
+}
+
+header nav ul {
+	display: block;
+	list-style-type: none;
+  	overflow: hidden;
+  	padding: 15px 0px 15px 0px;
+  	margin-bottom: 20px;
+  	margin-top: 20px;
+}
+
+header nav ul li {
+	float: left;
+	background-color: none;
+	width: 100px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #f3ca20;
+	font-weight: normal;
+	padding: 10px 0px 10px 0px;
+}
+
+header nav ul li a:hover{
+	text-decoration: none;
+	font-weight: normal;
+	color: #f3ca20;
+	border-bottom-style: solid;
+	border-bottom-color: #f3ca20;
+	border-bottom-width: 5px;
+	padding: 10px 0px 10px 0px;
+}
+/** main **/
+main {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	padding: 1px;
+}
+
+/** section **/
+
+/** figure **/
+
+figure {
+	width: 500px;
+}
+
+figure img {
+	height: 500px;
+}
+
+figcaption {
+	color: gainsboro;
+	font-style: italic;
+	text-align: center;
+}
+
+/** Footer **/
+
+footer {
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer div {
+	margin-top: 0px;
+	column-count: 3;
+	display: flex;
+}
+
+.footer-colonne {
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: white;
+	width: 33%;
+	color: white;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-left: 6px;
+}
+
+.footer-colonne ul{
+	color: white;
+	padding-left: 6px;
+}
+
+.footer-texte{
+	font-size: 18px;
+	padding-left: 1.5cm;
+	padding-right: 1.5cm;
+}
+
+.footer-colonne li, .footer-colonne a {	
+	list-style-type: none;
+	text-decoration: none;	
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: white;
+	text-align: center;
+}
+
+.footer-colonne a:hover {
+	text-decoration: underline;
+}
+
+/** Styles de l'accueil **/
+
+/** style pour balises p **/
+
+.h2-accueil {
+	font-size: 66px;
+	color: black;
+	margin: 30px 100px 30px 100px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.p-details {
+	font-size: 24px;
+	color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 10px;
+	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(114,117,101,0.5));
+}
+
+/** section **/
+
+.section-accueil{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin: 0px;
+	background-image: linear-gradient(to bottom, rgba(243,202,35,0.7), rgba(114,117,101,0.5)), url("../img/bu.jpg");
+	background-size: 100%;
+	height: 500px;
+}
+
+.section-accueil2 {
+	background-color: white;
+	margin: 0px;
+	padding: 60px 0px 60px 0px;
+}
+
+.section-accueil2 h2 {
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	color: black;
+}
+
+
+.section-accueil2 div {
+	background-color: white;
+	padding: 15px;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	display: inline-table;
+	border-radius: 10px;
+	width: 250px;
+	height: 300px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.section-accueil2 div li {
+	text-align: center;
+}
+
+.section-accueil2 div a {
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+.section-accueil2 div a:hover {
+	text-decoration: underline;
+}
+
+.section-accueil2 div img{
+	display: block;
+	margin: 10% auto;
+	max-width: 200px;
+	max-height: 200px;
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+}
+
+
+
+.section-accueil3 {
+	background-image: linear-gradient(to bottom, rgba(243,202,35,0.7), rgba(114,117,101,0.5)), url("../img/entrepot.jpg");
+	margin: 0px;	
+	padding: 60px 0px 60px 0px;
+}
+
+.section-accueil3 h2 {
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	color: white;
+}
+
+.section-accueil3 div {
+	background-color: #a125ff;
+	padding: 15px;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	display: inline-table;
+	border-radius: 10px;
+	width: 250px;
+	height: 300px;
+	box-shadow: 10px 10px 20px rgba(34, 239, 203, 0.5);
+}
+.section-accueil3 div li {
+	text-align: center;
+}
+
+.section-accueil3 div a {
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}
+
+.section-accueil3 div a:hover {
+	text-decoration: underline;
+}
+
+.section-accueil3 div img{
+	display: block;
+	margin: 10% auto;
+	max-width: 200px;
+	max-height: 200px;
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+}
+
+.section-accueil4 {
+	background-image: linear-gradient(to bottom, rgba(243,202,35,0.7), rgba(114,117,101,0.5)), url("../img/entrepot.jpg");
+	margin: 0px;	
+	padding: 60px 0px 60px 0px;
+}
+
+.section-accueil4 h2 {
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	color: white;
+}
+
+.section-accueil4 div {
+	background-color: #22efcb;
+	padding: 15px;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	display: inline-table;
+	border-radius: 10px;
+	width: 250px;
+	height: 300px;
+	box-shadow: 10px 10px 20px rgba(161, 37, 255, 0.5);
+}
+.section-accueil4 div li {
+	text-align: center;
+}
+
+.section-accueil4 div a {
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}
+
+.section-accueil4 div a:hover {
+	text-decoration: underline;
+}
+
+.section-accueil4 div img{
+	display: block;
+	margin: 10% auto;
+	max-width: 200px;
+	max-height: 200px;
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+}
+
+
+/** Style de l'affichage des élements d'une tracklist **/
+
+#tracklist {
+	background-color: white;
+	margin: 70px auto;
+	border: thin solid #8080803b;
+	width: 25cm;
+	padding: 10px;
+}
+
+#tracklist p{
+	text-align: center;
+}
+
+.div-tracks {
+	display: flex;
+	width: 600px;
+	margin: 10px auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+	background: linear-gradient(137deg,#22efcb 15.51%,#2980ff 51.65%,#a125ff 85.09%);
+}
+
+.div-tracks div{
+	display: block;
+}
+
+.div-tracks ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 596px;
+}
+
+
+.div-tracks img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.div-tracks-audio{
+	float: right;
+}
+
+.div-tracks-audio audio{
+	padding: 5px;
+	float: right;
+}
+
+.div-track-title {
+	float: left;
+	font-size: 14px;
+	color: white;
+	padding: 15px;
+}
+
+.plus-de-musiques {
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 20px;
+	border: thin solid black;
+	margin-left: 20cm;
+	padding: 2px;
+	font-weight: bold;
+	color: black;
+}
+
+.fieldset-connexion{
+	margin: 0 10cm 0 10cm;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(114,117,101,0.5));
+	border: none;
+	border-radius: 20px;
+	color: white;
+}
+
+.form-div{
+	margin: 0.2cm 0px 0.2cm 0cm;
+	text-align: left;
+	width: auto;
+	height: auto;
+}
+
+.fieldset-form{
+	margin: auto;
+	width: 150px;
+}
+.cont{
+    margin: 25px 160px;
+}

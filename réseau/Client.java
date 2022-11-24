@@ -1,4 +1,3 @@
-package test1;
 
 import java.net.*;
 import java.util.Scanner;
@@ -186,7 +185,7 @@ public class Client {
 
 			Thread.sleep(500);
 		} while (true);
-
+		
 	}
 
 	
