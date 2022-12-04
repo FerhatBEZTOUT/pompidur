@@ -1,0 +1,106 @@
+body {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+}
+.logo>img {
+    opacity:0.8;
+}
+.logo>img:hover {
+    opacity: 1 ;
+}
+
+
+.titre {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    color: rgb(77, 165, 219);
+}
+
+.navbar{
+    background-color: rgb(225, 232, 239) !important;
+}
+
+
+.navbar-nav>a {
+    font-weight: bold;
+
+}
+.navbar-nav>a:hover {
+    color: rgb(17, 121, 218);
+}
+
+p {
+    font-size: large;
+}
+
+#lienUniv {
+    color: white;
+}
+footer {
+    background-color: rgb(58, 151, 238);
+    color:white;
+    margin-top: auto;
+   
+ 
+    
+}
+
+
+li {
+    font-size: large;
+}
+
+
+.invisible {
+    visibility: hidden;
+    transition: 1000ms;
+}
+
+
+.error {
+    color : red;
+}
+
+.mon-bg {
+    background-color: rgb(225, 232, 239) !important;
+}
+
+
+.deconnect {
+    margin-left: 12px;
+    
+    color:rgba(56, 51, 48, 0.849);
+}
+
+.deconnect:hover {
+    color:rgb(245, 45, 10);
+}
+
+.btn-reserv {
+    visibility: hidden !important;
+}
+
+.carousel-reserv-show:hover img{
+    opacity: 0.25;
+    background-color: rgba(36, 31, 31, 0.807);
+   
+}
+
+
+.carousel-reserv-show:hover .btn-reserv {
+    visibility: visible !important;
+}
+
+
+.carousel-control:hover::before {
+    color: red !important;
+}
+
+
+.id_adh {
+    color:rgb(66, 65, 65) !important;
+    font-size: medium;
+    
+}
